@@ -29,7 +29,7 @@ h1 {
 #result {
   font-size: 2em;
   margin: 20px 0;
-  color: #ffffff;
+  color:black;
   text-shadow: 0 0 10px#fd77fd;
   transition: all 0.5s ease;
 }
