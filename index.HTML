@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roue des Jeux</title>
+  <link rel="stylesheet" href="./PUBLIC/CSS/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <nav class="gamer-navbar">
+  <div class="nav-container">
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#wheel">Roue</a></li>
+      <li><a href="#teams">Équipes</a></li>
+      <li><a href="#infos">Infos</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <h1>À quel jeu allons-nous jouer ce soir ?</h1>
+  <div id="result">Cliquez sur “Tourner” pour commencer</div>
+  <div class="wheel-container">
+    <canvas id="wheel" width="500" height="500"></canvas>
+  </div>
+  <div class="buttons">
+    <button id="spin">Tourner</button>
+    <button id="reset">Réinitialiser</button>
+  </div>
+
+  <!-- INFOS SECTIONS -->
+ <section id="infos">
+  <h2>Infos sur le jeu</h2>
+  <ul>
+    <li>
+      <strong>Age of Empires :</strong><br>
+      Jeu de stratégie en temps réel où tu construis une civilisation, récoltes des ressources, développes des technologies et affrontes des ennemis à travers les âges.<br>
+      <em>Trucs & Astuces :</em><br>
+      Crée des villageois en continu pour accélérer ta production.<br>
+      Construis des murailles tôt pour te protéger.<br>
+      Explore la carte rapidement pour repérer les ressources et les ennemis.<br>
+      Passe à l’âge suivant dès que possible pour débloquer des unités puissantes.
+    </li>
+
+    <li>
+      <strong>Sea of Thieves :</strong><br>
+      Jeu d’aventure multijoueur en monde ouvert où tu incarnes un pirate. Explore les îles, chasse des trésors, combats des squelettes et affronte d'autres équipages en mer.<br>
+      <em>Trucs & Astuces :</em><br>
+      Utilise la carte et la boussole pour coordonner ton équipage.<br>
+      Cache ton butin dans des endroits inattendus.<br>
+      Prépare-toi à affronter le Kraken et le Megalodon.<br>
+      Joue de la musique pour détendre l’ambiance ou célébrer une victoire.
+    </li>
+
+    <li>
+      <strong>Abiotic Factor :</strong><br>
+      Jeu coopératif de survie dans un laboratoire souterrain infesté de créatures. Résous des énigmes, fabrique des outils et coopère pour survivre.<br>
+      <em>Trucs & Astuces :</em><br>
+      Fabrique des outils dès le début pour améliorer ton efficacité.<br>
+      Analyse les objets pour débloquer des recettes utiles.<br>
+      Explore méthodiquement chaque zone pour maximiser les ressources.<br>
+      Coopère avec ton équipe pour éviter les pièges et les embuscades.
+    </li>
+
+    <li>
+      <strong>Wartales :</strong><br>
+      RPG tactique en monde ouvert où tu diriges une bande de mercenaires dans un univers médiéval. Explore, combats, recrute et prends des décisions morales.<br>
+      <em>Trucs & Astuces :</em><br>
+      Gère bien ta nourriture et ton moral pour éviter les mutineries.<br>
+      Positionne tes unités intelligemment en combat.<br>
+      Accepte des contrats pour gagner de l’or et de l’expérience.<br>
+      Spécialise tes personnages pour créer une équipe équilibrée.
+    </li>
+
+    <li>
+      <strong>Grounded :</strong><br>
+      Jeu de survie coopératif où tu incarnes un enfant miniaturisé dans un jardin. Construis un abri, affronte des insectes géants et découvre les secrets du monde.<br>
+      <em>Trucs & Astuces :</em><br>
+      Observe les fourmis : elles ne sont pas toujours hostiles.<br>
+      Construis ton camp en hauteur pour éviter les araignées.<br>
+      Fabrique une lampe pour explorer la nuit.<br>
+      Analyse les matériaux pour débloquer des recettes avancées.
+    </li>
+  </ul>
+</section>
+<!-- Pop-up infos jeu -->
+<div id="game-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-text"></div>
+  </div>
+</div>
+
+<section id="equipe">
+  <h2>Dans quelle équipe je serai ?</h2>
+  <p>Écris les noms des joueurs présents (séparés par des virgules) :</p>
+  <textarea id="player-input" rows="3" placeholder="Ex: Florent, Mini sardine, Zephy"></textarea>
+  <div class="buttons">
+    <button id="team-spin">Former les équipes</button>
+    <button id="team-reset">Réinitialiser</button>
+  </div>
+  <div id="team-result"></div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Roue des Jeux - Créé par Sardine © 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="./PUBLIC/Javascripts/javascripts.js"></script>
+</body>
+</html>
+
