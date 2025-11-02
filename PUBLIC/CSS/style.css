@@ -146,7 +146,7 @@ section p, section ul {
 
 .nav-menu li a:hover,
 .nav-menu li button:hover {
-  color: #ff00aa;
+  color: black;
 }
 
 /* 📱 Responsive hamburger */
